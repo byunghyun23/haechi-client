@@ -1,1 +1,1 @@
-# SmartContract sSecurity Diagnostic Tool - client
+# SmartContract Security Diagnostic Tool - client
