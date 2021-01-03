@@ -1,0 +1,41 @@
+======= overflowunderflow3.sol =======
+{
+	"ContractDefinition" : [ {
+		"kind" : "contract",
+		"line" : 3,
+		"name" : "OverflowUnderflow",
+		"id" : 151
+	} ],
+	"functionDefinition" : [ {
+		"visibility" : "public",
+		"line" : 5,
+		"name" : "increment",
+		"id" : 150
+	} ],
+	"functionCall" : [ ],
+	"VariableDeclaration" : [ {
+		"line" : 6,
+		"name" : "a",
+		"id" : 5,
+		"isStateVariable" : false,
+		"type" : "uint"
+	}, {
+		"line" : 7,
+		"name" : "b",
+		"id" : 9,
+		"isStateVariable" : false,
+		"type" : "uint"
+	}, {
+		"line" : 8,
+		"name" : "c",
+		"id" : 19,
+		"isStateVariable" : false,
+		"type" : "uint"
+	}, {
+		"line" : 9,
+		"name" : "x",
+		"id" : 25,
+		"isStateVariable" : false,
+		"type" : "uint"
+	} ]
+}

@@ -1,0 +1,790 @@
+JSON AST (compact format):
+
+
+======= solidity.sol =======
+{
+	"absolutePath" : "solidity.sol",
+	"exportedSymbols" : 
+	{
+		"Base1" : 
+		[
+			42
+		],
+		"Base2" : 
+		[
+			54
+		],
+		"Final" : 
+		[
+			59
+		],
+		"mortal" : 
+		[
+			30
+		],
+		"owned" : 
+		[
+			13
+		]
+	},
+	"id" : 60,
+	"nodeType" : "SourceUnit",
+	"nodes" : 
+	[
+		{
+			"id" : 1,
+			"literals" : 
+			[
+				"solidity",
+				"^",
+				"0.4",
+				".18"
+			],
+			"nodeType" : "PragmaDirective",
+			"src" : "0:23:0"
+		},
+		{
+			"baseContracts" : [],
+			"contractDependencies" : [],
+			"contractKind" : "contract",
+			"documentation" : null,
+			"fullyImplemented" : true,
+			"id" : 13,
+			"linearizedBaseContracts" : 
+			[
+				13
+			],
+			"name" : "owned",
+			"nodeType" : "ContractDefinition",
+			"nodes" : 
+			[
+				{
+					"body" : 
+					{
+						"id" : 9,
+						"nodeType" : "Block",
+						"src" : "70:35:0",
+						"statements" : 
+						[
+							{
+								"expression" : 
+								{
+									"argumentTypes" : null,
+									"id" : 7,
+									"isConstant" : false,
+									"isLValue" : false,
+									"isPure" : false,
+									"lValueRequested" : false,
+									"leftHandSide" : 
+									{
+										"argumentTypes" : null,
+										"id" : 4,
+										"name" : "owner",
+										"nodeType" : "Identifier",
+										"overloadedDeclarations" : [],
+										"referencedDeclaration" : 12,
+										"src" : "80:5:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_address",
+											"typeString" : "address"
+										}
+									},
+									"nodeType" : "Assignment",
+									"operator" : "=",
+									"rightHandSide" : 
+									{
+										"argumentTypes" : null,
+										"expression" : 
+										{
+											"argumentTypes" : null,
+											"id" : 5,
+											"name" : "msg",
+											"nodeType" : "Identifier",
+											"overloadedDeclarations" : [],
+											"referencedDeclaration" : 74,
+											"src" : "88:3:0",
+											"typeDescriptions" : 
+											{
+												"typeIdentifier" : "t_magic_message",
+												"typeString" : "msg"
+											}
+										},
+										"id" : 6,
+										"isConstant" : false,
+										"isLValue" : false,
+										"isPure" : false,
+										"lValueRequested" : false,
+										"memberName" : "sender",
+										"nodeType" : "MemberAccess",
+										"referencedDeclaration" : null,
+										"src" : "88:10:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_address",
+											"typeString" : "address"
+										}
+									},
+									"src" : "80:18:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_address",
+										"typeString" : "address"
+									}
+								},
+								"id" : 8,
+								"nodeType" : "ExpressionStatement",
+								"src" : "80:18:0"
+							}
+						]
+					},
+					"documentation" : null,
+					"id" : 10,
+					"implemented" : true,
+					"isConstructor" : true,
+					"isDeclaredConst" : false,
+					"modifiers" : [],
+					"name" : "owned",
+					"nodeType" : "FunctionDefinition",
+					"parameters" : 
+					{
+						"id" : 2,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "60:2:0"
+					},
+					"payable" : false,
+					"returnParameters" : 
+					{
+						"id" : 3,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "70:0:0"
+					},
+					"scope" : 13,
+					"src" : "46:59:0",
+					"stateMutability" : "nonpayable",
+					"superFunction" : null,
+					"visibility" : "public"
+				},
+				{
+					"constant" : false,
+					"id" : 12,
+					"name" : "owner",
+					"nodeType" : "VariableDeclaration",
+					"scope" : 13,
+					"src" : "110:13:0",
+					"stateVariable" : true,
+					"storageLocation" : "default",
+					"typeDescriptions" : 
+					{
+						"typeIdentifier" : "t_address",
+						"typeString" : "address"
+					},
+					"typeName" : 
+					{
+						"id" : 11,
+						"name" : "address",
+						"nodeType" : "ElementaryTypeName",
+						"src" : "110:7:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_address",
+							"typeString" : "address"
+						}
+					},
+					"value" : null,
+					"visibility" : "internal"
+				}
+			],
+			"scope" : 60,
+			"src" : "25:101:0"
+		},
+		{
+			"baseContracts" : 
+			[
+				{
+					"arguments" : null,
+					"baseName" : 
+					{
+						"contractScope" : null,
+						"id" : 14,
+						"name" : "owned",
+						"nodeType" : "UserDefinedTypeName",
+						"referencedDeclaration" : 13,
+						"src" : "147:5:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_contract$_owned_$13",
+							"typeString" : "contract owned"
+						}
+					},
+					"id" : 15,
+					"nodeType" : "InheritanceSpecifier",
+					"src" : "147:5:0"
+				}
+			],
+			"contractDependencies" : 
+			[
+				13
+			],
+			"contractKind" : "contract",
+			"documentation" : null,
+			"fullyImplemented" : true,
+			"id" : 30,
+			"linearizedBaseContracts" : 
+			[
+				30,
+				13
+			],
+			"name" : "mortal",
+			"nodeType" : "ContractDefinition",
+			"nodes" : 
+			[
+				{
+					"body" : 
+					{
+						"id" : 28,
+						"nodeType" : "Block",
+						"src" : "182:85:0",
+						"statements" : 
+						[
+							{
+								"condition" : 
+								{
+									"argumentTypes" : null,
+									"commonType" : 
+									{
+										"typeIdentifier" : "t_address",
+										"typeString" : "address"
+									},
+									"id" : 21,
+									"isConstant" : false,
+									"isLValue" : false,
+									"isPure" : false,
+									"lValueRequested" : false,
+									"leftExpression" : 
+									{
+										"argumentTypes" : null,
+										"expression" : 
+										{
+											"argumentTypes" : null,
+											"id" : 18,
+											"name" : "msg",
+											"nodeType" : "Identifier",
+											"overloadedDeclarations" : [],
+											"referencedDeclaration" : 74,
+											"src" : "196:3:0",
+											"typeDescriptions" : 
+											{
+												"typeIdentifier" : "t_magic_message",
+												"typeString" : "msg"
+											}
+										},
+										"id" : 19,
+										"isConstant" : false,
+										"isLValue" : false,
+										"isPure" : false,
+										"lValueRequested" : false,
+										"memberName" : "sender",
+										"nodeType" : "MemberAccess",
+										"referencedDeclaration" : null,
+										"src" : "196:10:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_address",
+											"typeString" : "address"
+										}
+									},
+									"nodeType" : "BinaryOperation",
+									"operator" : "==",
+									"rightExpression" : 
+									{
+										"argumentTypes" : null,
+										"id" : 20,
+										"name" : "owner",
+										"nodeType" : "Identifier",
+										"overloadedDeclarations" : [],
+										"referencedDeclaration" : 12,
+										"src" : "210:5:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_address",
+											"typeString" : "address"
+										}
+									},
+									"src" : "196:19:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_bool",
+										"typeString" : "bool"
+									}
+								},
+								"falseBody" : null,
+								"id" : 27,
+								"nodeType" : "IfStatement",
+								"src" : "192:69:0",
+								"trueBody" : 
+								{
+									"id" : 26,
+									"nodeType" : "Block",
+									"src" : "217:44:0",
+									"statements" : 
+									[
+										{
+											"expression" : 
+											{
+												"argumentTypes" : null,
+												"arguments" : 
+												[
+													{
+														"argumentTypes" : null,
+														"id" : 23,
+														"name" : "owner",
+														"nodeType" : "Identifier",
+														"overloadedDeclarations" : [],
+														"referencedDeclaration" : 12,
+														"src" : "244:5:0",
+														"typeDescriptions" : 
+														{
+															"typeIdentifier" : "t_address",
+															"typeString" : "address"
+														}
+													}
+												],
+												"expression" : 
+												{
+													"argumentTypes" : 
+													[
+														{
+															"typeIdentifier" : "t_address",
+															"typeString" : "address"
+														}
+													],
+													"id" : 22,
+													"name" : "selfdestruct",
+													"nodeType" : "Identifier",
+													"overloadedDeclarations" : [],
+													"referencedDeclaration" : 82,
+													"src" : "231:12:0",
+													"typeDescriptions" : 
+													{
+														"typeIdentifier" : "t_function_selfdestruct_nonpayable$_t_address_$returns$__$",
+														"typeString" : "function (address)"
+													}
+												},
+												"id" : 24,
+												"isConstant" : false,
+												"isLValue" : false,
+												"isPure" : false,
+												"kind" : "functionCall",
+												"lValueRequested" : false,
+												"names" : [],
+												"nodeType" : "FunctionCall",
+												"src" : "231:19:0",
+												"typeDescriptions" : 
+												{
+													"typeIdentifier" : "t_tuple$__$",
+													"typeString" : "tuple()"
+												}
+											},
+											"id" : 25,
+											"nodeType" : "ExpressionStatement",
+											"src" : "231:19:0"
+										}
+									]
+								}
+							}
+						]
+					},
+					"documentation" : null,
+					"id" : 29,
+					"implemented" : true,
+					"isConstructor" : false,
+					"isDeclaredConst" : false,
+					"modifiers" : [],
+					"name" : "kill",
+					"nodeType" : "FunctionDefinition",
+					"parameters" : 
+					{
+						"id" : 16,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "172:2:0"
+					},
+					"payable" : false,
+					"returnParameters" : 
+					{
+						"id" : 17,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "182:0:0"
+					},
+					"scope" : 30,
+					"src" : "159:108:0",
+					"stateMutability" : "nonpayable",
+					"superFunction" : null,
+					"visibility" : "public"
+				}
+			],
+			"scope" : 60,
+			"src" : "128:141:0"
+		},
+		{
+			"baseContracts" : 
+			[
+				{
+					"arguments" : null,
+					"baseName" : 
+					{
+						"contractScope" : null,
+						"id" : 31,
+						"name" : "mortal",
+						"nodeType" : "UserDefinedTypeName",
+						"referencedDeclaration" : 30,
+						"src" : "289:6:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_contract$_mortal_$30",
+							"typeString" : "contract mortal"
+						}
+					},
+					"id" : 32,
+					"nodeType" : "InheritanceSpecifier",
+					"src" : "289:6:0"
+				}
+			],
+			"contractDependencies" : 
+			[
+				30,
+				13
+			],
+			"contractKind" : "contract",
+			"documentation" : null,
+			"fullyImplemented" : true,
+			"id" : 42,
+			"linearizedBaseContracts" : 
+			[
+				42,
+				30,
+				13
+			],
+			"name" : "Base1",
+			"nodeType" : "ContractDefinition",
+			"nodes" : 
+			[
+				{
+					"body" : 
+					{
+						"id" : 40,
+						"nodeType" : "Block",
+						"src" : "325:29:0",
+						"statements" : 
+						[
+							{
+								"expression" : 
+								{
+									"argumentTypes" : null,
+									"arguments" : [],
+									"expression" : 
+									{
+										"argumentTypes" : [],
+										"expression" : 
+										{
+											"argumentTypes" : null,
+											"id" : 35,
+											"name" : "super",
+											"nodeType" : "Identifier",
+											"overloadedDeclarations" : [],
+											"referencedDeclaration" : 92,
+											"src" : "335:5:0",
+											"typeDescriptions" : 
+											{
+												"typeIdentifier" : "t_super$_Base1_$42",
+												"typeString" : "contract super Base1"
+											}
+										},
+										"id" : 37,
+										"isConstant" : false,
+										"isLValue" : false,
+										"isPure" : false,
+										"lValueRequested" : false,
+										"memberName" : "kill",
+										"nodeType" : "MemberAccess",
+										"referencedDeclaration" : 29,
+										"src" : "335:10:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_function_internal_nonpayable$__$returns$__$",
+											"typeString" : "function ()"
+										}
+									},
+									"id" : 38,
+									"isConstant" : false,
+									"isLValue" : false,
+									"isPure" : false,
+									"kind" : "functionCall",
+									"lValueRequested" : false,
+									"names" : [],
+									"nodeType" : "FunctionCall",
+									"src" : "335:12:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_tuple$__$",
+										"typeString" : "tuple()"
+									}
+								},
+								"id" : 39,
+								"nodeType" : "ExpressionStatement",
+								"src" : "335:12:0"
+							}
+						]
+					},
+					"documentation" : null,
+					"id" : 41,
+					"implemented" : true,
+					"isConstructor" : false,
+					"isDeclaredConst" : false,
+					"modifiers" : [],
+					"name" : "kill",
+					"nodeType" : "FunctionDefinition",
+					"parameters" : 
+					{
+						"id" : 33,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "315:2:0"
+					},
+					"payable" : false,
+					"returnParameters" : 
+					{
+						"id" : 34,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "325:0:0"
+					},
+					"scope" : 42,
+					"src" : "302:52:0",
+					"stateMutability" : "nonpayable",
+					"superFunction" : 29,
+					"visibility" : "public"
+				}
+			],
+			"scope" : 60,
+			"src" : "271:85:0"
+		},
+		{
+			"baseContracts" : 
+			[
+				{
+					"arguments" : null,
+					"baseName" : 
+					{
+						"contractScope" : null,
+						"id" : 43,
+						"name" : "mortal",
+						"nodeType" : "UserDefinedTypeName",
+						"referencedDeclaration" : 30,
+						"src" : "376:6:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_contract$_mortal_$30",
+							"typeString" : "contract mortal"
+						}
+					},
+					"id" : 44,
+					"nodeType" : "InheritanceSpecifier",
+					"src" : "376:6:0"
+				}
+			],
+			"contractDependencies" : 
+			[
+				30,
+				13
+			],
+			"contractKind" : "contract",
+			"documentation" : null,
+			"fullyImplemented" : true,
+			"id" : 54,
+			"linearizedBaseContracts" : 
+			[
+				54,
+				30,
+				13
+			],
+			"name" : "Base2",
+			"nodeType" : "ContractDefinition",
+			"nodes" : 
+			[
+				{
+					"body" : 
+					{
+						"id" : 52,
+						"nodeType" : "Block",
+						"src" : "412:29:0",
+						"statements" : 
+						[
+							{
+								"expression" : 
+								{
+									"argumentTypes" : null,
+									"arguments" : [],
+									"expression" : 
+									{
+										"argumentTypes" : [],
+										"expression" : 
+										{
+											"argumentTypes" : null,
+											"id" : 47,
+											"name" : "super",
+											"nodeType" : "Identifier",
+											"overloadedDeclarations" : [],
+											"referencedDeclaration" : 94,
+											"src" : "422:5:0",
+											"typeDescriptions" : 
+											{
+												"typeIdentifier" : "t_super$_Base2_$54",
+												"typeString" : "contract super Base2"
+											}
+										},
+										"id" : 49,
+										"isConstant" : false,
+										"isLValue" : false,
+										"isPure" : false,
+										"lValueRequested" : false,
+										"memberName" : "kill",
+										"nodeType" : "MemberAccess",
+										"referencedDeclaration" : 29,
+										"src" : "422:10:0",
+										"typeDescriptions" : 
+										{
+											"typeIdentifier" : "t_function_internal_nonpayable$__$returns$__$",
+											"typeString" : "function ()"
+										}
+									},
+									"id" : 50,
+									"isConstant" : false,
+									"isLValue" : false,
+									"isPure" : false,
+									"kind" : "functionCall",
+									"lValueRequested" : false,
+									"names" : [],
+									"nodeType" : "FunctionCall",
+									"src" : "422:12:0",
+									"typeDescriptions" : 
+									{
+										"typeIdentifier" : "t_tuple$__$",
+										"typeString" : "tuple()"
+									}
+								},
+								"id" : 51,
+								"nodeType" : "ExpressionStatement",
+								"src" : "422:12:0"
+							}
+						]
+					},
+					"documentation" : null,
+					"id" : 53,
+					"implemented" : true,
+					"isConstructor" : false,
+					"isDeclaredConst" : false,
+					"modifiers" : [],
+					"name" : "kill",
+					"nodeType" : "FunctionDefinition",
+					"parameters" : 
+					{
+						"id" : 45,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "402:2:0"
+					},
+					"payable" : false,
+					"returnParameters" : 
+					{
+						"id" : 46,
+						"nodeType" : "ParameterList",
+						"parameters" : [],
+						"src" : "412:0:0"
+					},
+					"scope" : 54,
+					"src" : "389:52:0",
+					"stateMutability" : "nonpayable",
+					"superFunction" : 29,
+					"visibility" : "public"
+				}
+			],
+			"scope" : 60,
+			"src" : "358:85:0"
+		},
+		{
+			"baseContracts" : 
+			[
+				{
+					"arguments" : null,
+					"baseName" : 
+					{
+						"contractScope" : null,
+						"id" : 55,
+						"name" : "Base1",
+						"nodeType" : "UserDefinedTypeName",
+						"referencedDeclaration" : 42,
+						"src" : "463:5:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_contract$_Base1_$42",
+							"typeString" : "contract Base1"
+						}
+					},
+					"id" : 56,
+					"nodeType" : "InheritanceSpecifier",
+					"src" : "463:5:0"
+				},
+				{
+					"arguments" : null,
+					"baseName" : 
+					{
+						"contractScope" : null,
+						"id" : 57,
+						"name" : "Base2",
+						"nodeType" : "UserDefinedTypeName",
+						"referencedDeclaration" : 54,
+						"src" : "470:5:0",
+						"typeDescriptions" : 
+						{
+							"typeIdentifier" : "t_contract$_Base2_$54",
+							"typeString" : "contract Base2"
+						}
+					},
+					"id" : 58,
+					"nodeType" : "InheritanceSpecifier",
+					"src" : "470:5:0"
+				}
+			],
+			"contractDependencies" : 
+			[
+				30,
+				42,
+				13,
+				54
+			],
+			"contractKind" : "contract",
+			"documentation" : null,
+			"fullyImplemented" : true,
+			"id" : 59,
+			"linearizedBaseContracts" : 
+			[
+				59,
+				54,
+				42,
+				30,
+				13
+			],
+			"name" : "Final",
+			"nodeType" : "ContractDefinition",
+			"nodes" : [],
+			"scope" : 60,
+			"src" : "445:39:0"
+		}
+	],
+	"src" : "0:484:0"
+}

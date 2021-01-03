@@ -1,0 +1,100 @@
+======= output.sol =======
+{
+	"ContractDefinition" : [ {
+		"kind" : "contract",
+		"line" : 2,
+		"name" : "TestLoop",
+		"id" : 124
+	} ],
+	"functionDefinition" : [ {
+		"visibility" : "public",
+		"line" : 9,
+		"name" : "testWhile",
+		"id" : 48
+	}, {
+		"visibility" : "public",
+		"line" : 16,
+		"name" : "testForStatement",
+		"id" : 123
+	} ],
+	"functionCall" : [ {
+		"caller" : "require",
+		"line" : 13,
+		"name" : "None",
+		"id" : 32
+	}, {
+		"caller" : null,
+		"line" : 13,
+		"name" : "transfer",
+		"id" : 40
+	}, {
+		"caller" : "require",
+		"line" : 19,
+		"name" : "None",
+		"id" : 58
+	}, {
+		"caller" : null,
+		"line" : 23,
+		"name" : "send",
+		"id" : 92
+	}, {
+		"caller" : null,
+		"line" : 24,
+		"name" : "transfer",
+		"id" : 100
+	}, {
+		"caller" : "require",
+		"line" : 25,
+		"name" : "None",
+		"id" : 107
+	} ],
+	"VariableDeclaration" : [ {
+		"line" : 4,
+		"name" : "owner",
+		"id" : 5,
+		"isStateVariable" : true,
+		"type" : "address"
+	}, {
+		"line" : 5,
+		"name" : "i",
+		"id" : 8,
+		"isStateVariable" : true,
+		"type" : "uint"
+	}, {
+		"line" : 5,
+		"name" : "z",
+		"id" : 10,
+		"isStateVariable" : true,
+		"type" : "uint"
+	}, {
+		"line" : 6,
+		"name" : "a",
+		"id" : 13,
+		"isStateVariable" : true,
+		"type" : "uint"
+	}, {
+		"line" : 7,
+		"name" : "b",
+		"id" : 16,
+		"isStateVariable" : true,
+		"type" : "uint"
+	}, {
+		"line" : 8,
+		"name" : "c",
+		"id" : 19,
+		"isStateVariable" : true,
+		"type" : "uint"
+	}, {
+		"line" : 11,
+		"name" : "amount",
+		"id" : 21,
+		"isStateVariable" : false,
+		"type" : "uint"
+	}, {
+		"line" : 19,
+		"name" : "amount",
+		"id" : 50,
+		"isStateVariable" : false,
+		"type" : "uint"
+	} ]
+}
