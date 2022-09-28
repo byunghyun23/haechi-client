@@ -2,6 +2,7 @@
 
 Please see <a href='https://github.com/byunghyun23/haechi/'>here</a> for more details on the solution.   
 This repository is an API that makes HAECHI available over TCP.
+Enter your Solidity code from the web through <a href='https://github.com/byunghyun23/haechi-web/'>here</a>.
 
 ## Requirements
 * Windows
