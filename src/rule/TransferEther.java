@@ -69,7 +69,7 @@ public class TransferEther implements ValidationRule{
 	@Override
 	public String getRuleName() {
 	    //return "Transfer-Ether";
-		return "Reentrancy : Transfer Ether";
+		return "Transfer Ether";
 	}
 
 	@Override

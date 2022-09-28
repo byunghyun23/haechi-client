@@ -41,7 +41,7 @@ public class TxOrigin implements ValidationRule {
 
 	@Override
 	public String getRuleName() {
-	    return "tx-origin";
+	    return "Use tx.origin";
 	}
 
 	@Override

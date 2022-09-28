@@ -122,7 +122,7 @@ public class MultipleInheritance implements ValidationRule{
 
 	@Override
 	public String getRuleName() {
-	    return "Contract characteristics : Multiple Inheritance";
+	    return "Multiple Inheritance";
 	}
 
 	@Override

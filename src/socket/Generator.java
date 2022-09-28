@@ -10,11 +10,11 @@ public class Generator extends Thread {
     public void run() {
     	
     	try {
-    		ServerSocket serverSock = new ServerSocket(5757);
+    		ServerSocket serversock = new ServerSocket(5757);
     		
     		while (true) {
     			System.out.println("Pending update request..");
-    			Socket socket = serverSock.accept();
+    			Socket socket = serversock.accept();
     			socket.setSoTimeout(300000);
     			System.out.println("Reception!");
     			Listener listener = new Listener(socket, number);
