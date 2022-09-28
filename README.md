@@ -24,5 +24,5 @@ This repository is an API that makes HAECHI available over TCP.
 ```
 
 ## Run (Windows)
-* haechi_server.bat [filename]
+* haechi_server.bat
 
