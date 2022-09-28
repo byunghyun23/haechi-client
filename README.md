@@ -9,7 +9,6 @@ Enter your Solidity code from the web through <a href='https://github.com/byungh
 * Linux
 * solidity compiler 0.4.25 or 0.4.26
 
-
 ## Details
 * Default port
 ```
