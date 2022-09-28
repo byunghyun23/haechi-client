@@ -8,6 +8,9 @@ This repository is an API that makes HAECHI available over TCP.
 * Linux
 * solidity compiler 0.4.25 or 0.4.26
 
+## You have to
+* Windows
+
 ## Details
 * Default port
 ```
