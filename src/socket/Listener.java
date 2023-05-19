@@ -45,7 +45,7 @@ public class Listener extends Thread {
 		while (isRun) {
 			cnt++;
 			if ((cnt % 1000) == 0) {
-				System.out.println("다음 순번 대기 중.. [" + number + "]");
+				System.out.println("waiting for next turn.. [" + number + "]");
 			}
 		}
 		
@@ -57,7 +57,7 @@ public class Listener extends Thread {
 			InputStream input = socket.getInputStream();
 			OutputStream output = socket.getOutputStream();
 
-			// 코드 용량 수신
+			// Receive code capacity
 			byte[] receiveBuffer = new byte[1024];
 			input.read(receiveBuffer);
 			String strSize = new String(receiveBuffer);
@@ -67,13 +67,12 @@ public class Listener extends Thread {
 			size = Integer.parseInt(strSize);
 			System.out.println("Listener solidiyCount : " + size);
 
-			// 코드 용량 수신 확인
 			output.write(confirm);
 
-			// 코드 수신
+			// receive code
 			byte[] bytesSolidity = new byte[size];
 
-			// 잔여 반복 코드
+			// remaining iterations
 			int max = 65000;
 			int loopSize = bytesSolidity.length;
 			System.out.println("loopSize : " + loopSize);
@@ -95,20 +94,18 @@ public class Listener extends Thread {
 			System.out.println("loopCount : " + loopCount);
 			System.out.println("remain : " + remain);
 
-			// 분석
 //    		analyze(solidity);
 
-			// 결과 용량 송신
+			// send Resulting Capacity
 			String result = analyze(solidity);
 			String count = Integer.toString(result.length());
 			byte[] bytesCount = count.getBytes();
 			System.out.println("Listener resultCount : " + count);
 			output.write(bytesCount);
 
-			// 결과 용량 송신 확인
 			input.read(confirm);
 
-			// 결과 송신
+			// send result
 			output.write(result.getBytes());
 
 			// socket.close();
@@ -121,7 +118,7 @@ public class Listener extends Thread {
 
 	public String analyze(String solidity) {
 		// create .sol
-		String sol = "./solidity/web/solidity_ex_" + number + ".sol";
+		String sol = "solidity/web/solidity_ex_" + number + ".sol";
 		try {
 			OutputStream outputStream = new FileOutputStream(sol);
 			String str = solidity;
@@ -144,7 +141,8 @@ public class Listener extends Thread {
 		Runtime rt = Runtime.getRuntime();
 		Process pc = null;
 		try {
-			String command = "solc_batch.bat " + inputFile;
+//			String command = "solc_batch.bat " + inputFile;		// Windows
+			String command = "./solc.sh " + inputFile;		// Linux
 			// String command = "telegramBot";
 			pc = rt.exec(command);
 			pc.waitFor();
@@ -153,7 +151,7 @@ public class Listener extends Thread {
 			return "{\"error\":\"creating AST file\"}";
 		} finally {
 			pc.destroy();
-			System.out.println("solc-windows exec!");
+			System.out.println("solc exec!");
 		}
 
 		// analyze

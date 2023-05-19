@@ -5,9 +5,12 @@ This repository is an API that makes HAECHI available over TCP.
 Enter your Solidity code from the web through <a href='https://github.com/byunghyun23/haechi-web/'>here</a>.
 
 ## Requirements
-* Windows
-* Linux
+* Windows or Linux
 * solidity compiler 0.4.25 or 0.4.26
+
+## Install (Only Linux)
+* sudo snap install docker
+* sudo docker pull ethereum/solc:0.4.25
 
 ## Details
 * Default port (TCP)
@@ -20,6 +23,9 @@ Enter your Solidity code from the web through <a href='https://github.com/byungh
 2. Solidity Code
 3. Analysis Results of Solidity Code
 ```
+
+## Run (Linux)
+* ./haechi_server.sh
 
 ## Run (Windows)
 * haechi_server.bat

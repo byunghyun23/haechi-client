@@ -1,9 +1,9 @@
 JSON AST (compact format):
 
 
-======= ./solidity/web/solidity_ex_1.sol =======
+======= solidity/web/solidity_ex_1.sol =======
 {
-	"absolutePath" : "./solidity/web/solidity_ex_1.sol",
+	"absolutePath" : "solidity/web/solidity_ex_1.sol",
 	"exportedSymbols" : 
 	{
 		"TxUserWallet" : 
