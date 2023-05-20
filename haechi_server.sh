@@ -1,2 +1,2 @@
 #!/bin/bash
-java -jar dist/haechi_server_linux.jar 
+java -jar dist/haechi_server.jar 
